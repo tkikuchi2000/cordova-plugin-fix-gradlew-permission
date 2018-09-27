@@ -6,7 +6,7 @@ Fix gradlew permission for *nix (not for windows).
 
 Install the plugin by fetching the dependencies
 
-    $ cordova plugin add https://github.com/tkikuchi2000/cordova-plugin-fix-gradlew-permission.git#1.0.0
+    $ cordova plugin add https://github.com/tkikuchi2000/cordova-plugin-fix-gradlew-permission.git#1.0.1
 
 Install Android platform
 

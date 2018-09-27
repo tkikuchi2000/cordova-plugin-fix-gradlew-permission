@@ -1,4 +1,5 @@
 var fs = require('fs');
+var os = require('os');
 
 function isExistFile(file) {
   try {
@@ -15,7 +16,7 @@ module.exports = function(context) {
   var deferred = context.requireCordovaModule('q').defer();
 
   // change permission
-  if (isExistFile(gradlew)) {
+  if (isExistFile(gradlew) && os.type().match('Windows') === null) {
     fs.chmodSync(gradlew, '755')
     deferred.resolve();
   }
