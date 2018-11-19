@@ -18,8 +18,8 @@ module.exports = function(context) {
   // change permission
   if (isExistFile(gradlew) && os.type().match('Windows') === null) {
     fs.chmodSync(gradlew, '755')
-    deferred.resolve();
   }
+  deferred.resolve();
 
   return deferred.promise;
 };
